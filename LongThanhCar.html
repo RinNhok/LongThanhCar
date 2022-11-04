@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9876ed7d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="webcar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>WEBCAR</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+    margin-right: 2px;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*HEADER*/
+.top_bar{
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99999;
+}
+.top_bar_khung{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.top_bar_left{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.top_bar_right .social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.MENU a{
+    font-weight: 550;
+    font-size: 18px;
+}
+.logo{
+    width: 30%;
+}
+.item{
+    margin-right: 10px;
+    margin-bottom: 9px;
+    width: 24px;
+}
+.item2{
+    width: 72px;
+    margin-bottom: 9px;
+}
+.MENU .TC{
+    color: orange;
+}
+.MENU .space{
+    margin-right: 10px;
+
+}
+
+.banner{
+    background-color: rgb(255, 196, 0);
+    height: 520px;
+    margin-top: 80px;
+}
+/*END HEADER*/
+
+/*-------------------------------------------------------------*/
+
+/*MAIN*/
+/*Booking*/
+.bg_booking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 238, 238, 0.842);
+    height: 690px;
+}
+.bg_booking .box_booking{
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color: white;
+    box-shadow: 0px 0px 11px rgb(92, 92, 92); 
+}
+.boxbooking_khung{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nameboxcar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: rgb(255, 196, 0);
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin: 30px 0 30px 0;
+    
+}
+.label{
+    width: 230px;
+}
+.diachi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    position: relative;
+}
+.diachi .form{
+    position: absolute;
+    left: 288px;
+}
+.form input{
+    width: 1050px;
+    height: 38px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px rgb(92, 92, 92);
+    font-size: 18px;
+    color: gray;
+}
+.form2{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 288px;
+}
+.tab_time{
+    position: absolute;
+    top: 45px;
+    z-index: 999;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.tab_clock{
+    position: absolute;
+    top: 45px;
+    z-index: 999; 
+}
+.form2:hover .tab_time, .form3:hover .tab_clock {
+    opacity: 1;
+    visibility: visible;
+}
+
+.buttondate{
+    margin-left: 1px;
+}
+.form2 input, .form3 input{
+    width: 250px;
+    height: 38px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px 0 0 3px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 2px rgb(92, 92, 92);
+    font-size: 18px;
+    color: gray;
+}
+.form3{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 1045px;
+}
+.form4{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 288px;
+}
+.label2{
+    position: absolute;
+    left: 800px;
+    width: 230px;
+    margin-right: 257px;
+}
+.diachi .chongoi form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+.margin{
+    margin-right: 23.6px;
+    font-size: 22px;
+}
+.chongoi input{
+    width: 1em;
+    height: 1em;
+    border: 30px solid orange;
+}
+.nameboxcar2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 9px;
+    background-color: rgb(5, 20, 107);
+    box-shadow: 3px 3px 6px rgb(92, 92, 92);
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0px 0 30px 0;
+}
+.nameboxcar2 a{
+    color: white;
+}
+.nameboxcar2:hover{
+    background-color: rgb(0, 13, 85);
+}
+
+
+
+/*Why us*/
+.bg_whyus{
+    background-color: rgb(255, 208, 0);
+    height: 520px;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="top_bar">
+            <div class="container">
+                <div class="top_bar_khung">
+                    <div class="top_bar_left">
+                        <img class="logo" src="img/logo.png" alt="logo">
+                    </div>
+                    <div class="top_bar_right">
+                        <div class="social">
+                            <a href="https://www.facebook.com/" target="_blank"><img class="item" src="img/icon fb.png" alt="FB"></a>
+                            <a href="#" target="_blank"><img class="item" src="img/icon tw.png" alt="TW"></a>
+                            <a href="#" target="_blank"><img class="item" src="img/icon gg.png" alt="GG"></a>
+                            <a href="https://www.apple.com/app-store/" target="_blank"><img class="item2" src="img/icon app.png" alt="APP"></a>
+                        </div>
+                        <div class="MENU">
+                            <a class="TC space" href="webcar.html">TRANG CHỦ</a>
+                            <span class="space">|</span>
+                            <a class="space" href="bookingcar.html">ĐẶT XE</a>
+                            <span class="space">|</span>
+                            <a class="space" href="price.html">BẢNG GIÁ</a>
+                            <span class="space">|</span>
+                            <a class="space" href="promotion.html">KHUYẾN MÃI</a>
+                            <span class="space">|</span>
+                            <a class="space" href="news.html">TIN TỨC</a>
+                            <span class="space">|</span>
+                            <a class="space" href="aboutus.html">GIỚI THIỆU</a>
+                            <span class="space">|</span>
+                            <a href="support.html">HỖ TRỢ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="banner">
+            <img src="img/banner-06.png" alt="banner">
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="bg_booking">
+            <div class="box_booking">
+                <div class="boxbooking_khung">
+                    <div class="nameboxcar">
+                        <p>ĐẶT XE</P>
+                    </div>
+                    <div class="diachi">
+                        <div class="label">
+                            <p>Địa chỉ đón khách</p>
+                        </div>
+                        <div class="form">
+                            <form action="DIACHI">
+                                <input type="text" value="Long Thành">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="diachi">
+                        <div class="label">
+                            <p>Địa chỉ trả khách</p>
+                        </div>
+                        <div class="form">
+                            <form action="DIACHI">
+                                <input type="text" value="Nhập địa chỉ bạn muốn đến">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="diachi">
+                        <div class="label">
+                            <p>Ngày khởi hành</p>
+                        </div>
+                        <div class="form2">
+                            <form action="Ngaykhoihanh">
+                                <input type="text" value="Chọn ngày khởi hành">
+                            </form>
+                            <div class="date">
+                                <img class="buttondate" src="img/icon_date.png" alt="buttondate">
+                            </div>
+                            <div class="tab_time">
+                                <img src="img/tab_time.png" alt="tab_time">
+                            </div>
+                        </div>
+                        <div class="label2">
+                            <p>Thời gian khởi hành</p>
+                        </div>
+                        <div class="form3">
+                            <form action="thoigiankhoihanh">
+                                <input type="text" value="Chọn thời gian khởi hành">
+                            </form>
+                            <div class="date">
+                                <img class="buttondate" src="img/icon_time.png" alt="buttontime">
+                            </div>
+                            <div class="tab_time tab_clock">
+                                <img src="img/tab_clock.png" alt="tab_clock">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="diachi">
+                        <div class="label">
+                            <p>Loại xe</p>
+                        </div>
+                        <div class="form2">
+                            <form action="Loaixe">
+                                <input type="text" value="Chọn loại xe">
+                            </form>
+                            <img class="buttondate" src="img/icon_car.png" alt="buttoncar">
+                        </div>
+                        <div class="chongoi">
+                            <form>
+                                <input class="margin" type="radio" id="html" name="fav_language" value="Siêu tiết kiệm">
+                                <label class="margin" for="html">Siêu tiết kiệm</label><br>
+                                <input class="margin" type="radio" id="css" name="fav_language" value="Cao cấp">
+                                <label class="margin" for="css">Cao cấp</label><br>
+                                <input class="margin" type="radio" id="javascript" name="fav_language" value="Đồng hành">
+                                <label class="margin" for="javascript">Đồng hành</label>
+                            </form> 
+                        </div>
+                    </div>
+                    <div class="diachi">
+                        <div class="label">
+                            <p>Mã khuyến mãi</p>
+                        </div>
+                        <div class="form2">
+                            <form action="Khuyenmai">
+                                <input type="text" value="Nhập mã khuyến mãi">
+                            </form>
+                            <img class="buttondate" src="img/icon_promo.png" alt="buttonpromo">
+                        </div>
+                    </div>
+                    <div class="nameboxcar2">
+                        <a href="bookingcar.html">ĐẶT XE</a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="bg_whyus">
+
+        </div>
+        <div class="banner_caiapp">
+            <img src="img/banner_cai_app.png" alt="bannercaiapp">
+        </div>
+    </div>
+</body>
+</html>
